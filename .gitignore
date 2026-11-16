@@ -54,7 +54,9 @@ yarn-error.log*
 *.sqlite3
 nutripredict.db
 
-# OS Files
+# OS & Office Files
 .DS_Store
 Thumbs.db
 desktop.ini
+~$*
+*.tmp
