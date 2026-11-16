@@ -1,0 +1,28 @@
+DEPARTAMENTOS_METADATA = [
+    { "id": "PE-AMA", "ubigeo": "01", "nombre": "Amazonas", "region_natural": "Selva", "altitud_capital_msnm": 2335, "lat": -6.2317, "lon": -77.8690 },
+    { "id": "PE-ANC", "ubigeo": "02", "nombre": "Áncash", "region_natural": "Sierra", "altitud_capital_msnm": 3052, "lat": -9.5278, "lon": -77.5278 },
+    { "id": "PE-APU", "ubigeo": "03", "nombre": "Apurímac", "region_natural": "Sierra", "altitud_capital_msnm": 2378, "lat": -13.6339, "lon": -72.8814 },
+    { "id": "PE-ARE", "ubigeo": "04", "nombre": "Arequipa", "region_natural": "Sierra", "altitud_capital_msnm": 2325, "lat": -16.4090, "lon": -71.5375 },
+    { "id": "PE-AYA", "ubigeo": "05", "nombre": "Ayacucho", "region_natural": "Sierra", "altitud_capital_msnm": 2761, "lat": -13.1588, "lon": -74.2239 },
+    { "id": "PE-CAJ", "ubigeo": "06", "nombre": "Cajamarca", "region_natural": "Sierra", "altitud_capital_msnm": 2750, "lat": -7.1617, "lon": -78.5128 },
+    { "id": "PE-CAL", "ubigeo": "07", "nombre": "Callao", "region_natural": "Costa", "altitud_capital_msnm": 5, "lat": -12.0566, "lon": -77.1181 },
+    { "id": "PE-CUS", "ubigeo": "08", "nombre": "Cusco", "region_natural": "Sierra", "altitud_capital_msnm": 3399, "lat": -13.5319, "lon": -71.9675 },
+    { "id": "PE-HUV", "ubigeo": "09", "nombre": "Huancavelica", "region_natural": "Sierra", "altitud_capital_msnm": 3676, "lat": -12.7872, "lon": -74.9727 },
+    { "id": "PE-HUC", "ubigeo": "10", "nombre": "Huánuco", "region_natural": "Sierra", "altitud_capital_msnm": 1880, "lat": -9.9306, "lon": -76.2422 },
+    { "id": "PE-ICA", "ubigeo": "11", "nombre": "Ica", "region_natural": "Costa", "altitud_capital_msnm": 406, "lat": -14.0678, "lon": -75.7286 },
+    { "id": "PE-JUN", "ubigeo": "12", "nombre": "Junín", "region_natural": "Sierra", "altitud_capital_msnm": 3259, "lat": -12.0651, "lon": -75.2049 },
+    { "id": "PE-LAL", "ubigeo": "13", "nombre": "La Libertad", "region_natural": "Costa", "altitud_capital_msnm": 34, "lat": -8.1160, "lon": -79.0300 },
+    { "id": "PE-LAM", "ubigeo": "14", "nombre": "Lambayeque", "region_natural": "Costa", "altitud_capital_msnm": 29, "lat": -6.7714, "lon": -79.8409 },
+    { "id": "PE-LIM", "ubigeo": "15", "nombre": "Lima", "region_natural": "Costa", "altitud_capital_msnm": 154, "lat": -12.0464, "lon": -77.0428 },
+    { "id": "PE-LOR", "ubigeo": "16", "nombre": "Loreto", "region_natural": "Selva", "altitud_capital_msnm": 106, "lat": -3.7491, "lon": -73.2538 },
+    { "id": "PE-MDD", "ubigeo": "17", "nombre": "Madre de Dios", "region_natural": "Selva", "altitud_capital_msnm": 183, "lat": -12.5933, "lon": -69.1891 },
+    { "id": "PE-MOQ", "ubigeo": "18", "nombre": "Moquegua", "region_natural": "Costa", "altitud_capital_msnm": 1410, "lat": -17.1983, "lon": -70.9357 },
+    { "id": "PE-PAS", "ubigeo": "19", "nombre": "Pasco", "region_natural": "Sierra", "altitud_capital_msnm": 4330, "lat": -10.6675, "lon": -76.2567 },
+    { "id": "PE-PIU", "ubigeo": "20", "nombre": "Piura", "region_natural": "Costa", "altitud_capital_msnm": 29, "lat": -5.1945, "lon": -80.6328 },
+    { "id": "PE-PUN", "ubigeo": "21", "nombre": "Puno", "region_natural": "Sierra", "altitud_capital_msnm": 3827, "lat": -15.8422, "lon": -70.0199 },
+    { "id": "PE-SAM", "ubigeo": "22", "nombre": "San Martín", "region_natural": "Selva", "altitud_capital_msnm": 282, "lat": -6.4859, "lon": -76.3686 },
+    { "id": "PE-TAC", "ubigeo": "23", "nombre": "Tacna", "region_natural": "Costa", "altitud_capital_msnm": 562, "lat": -18.0146, "lon": -70.2536 },
+    { "id": "PE-TUM", "ubigeo": "24", "nombre": "Tumbes", "region_natural": "Costa", "altitud_capital_msnm": 6, "lat": -3.5669, "lon": -80.4515 },
+    { "id": "PE-UCA", "ubigeo": "25", "nombre": "Ucayali", "region_natural": "Selva", "altitud_capital_msnm": 154, "lat": -8.3791, "lon": -74.5539 }
+]
+

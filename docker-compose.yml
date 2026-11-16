@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: nutripredict-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nutripredict_db
+      POSTGRES_USER: nutripredict_user
+      POSTGRES_PASSWORD: NutriPredictSecure2026!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nutripredict_user -d nutripredict_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: nutripredict-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: nutripredict-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=postgresql://nutripredict_user:NutriPredictSecure2026!@db:5432/nutripredict_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=nutripredict_super_secret_production_key_2026_change_in_prod
+      - ARTIFACTS_DIR=/app/storage/artifacts
+      - CACHE_DIR=/app/storage/cache
+      - REPORTS_DIR=/app/storage/reports
+      - MPLCONFIGDIR=/app/storage/cache
+    ports:
+      - "8000:8000"
+    volumes:
+      - api_storage:/app/storage
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: nutripredict-web
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres_data:
+  redis_data:
+  api_storage:
+
